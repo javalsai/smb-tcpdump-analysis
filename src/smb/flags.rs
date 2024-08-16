@@ -27,8 +27,7 @@ bitflags! {
         /// server.
         const FlagsServer2Redir = 0x00000001;
 
-        ///  When set, indicates that this is an ASYNC SMB2 header. Always set
-        /// for headers of the form described in this section.
+        ///  When set, indicates that this is an ASYNC SMB2 header.
         const FlagsAsyncCommand = 0x00000002;
 
         ///  When set in an SMB2 request, indicates that this request is a
