@@ -5,7 +5,7 @@ This is just a rust tool that tries to analyze `tcpdump` output as SMB traffic a
 
 This doesn't have to be exclusive to SMB, it has a module dedicated to parsing tcpdump output, so if you just wanna use that for another protocol is fine, the license allows anything.
 
-Perfect (IMO) for when just windows doesn't load the SMB share and the most useful thing you have is a generic error code and "Unspecified Error".º
+Perfect (IMO) for when just windows doesn't load the SMB share and the most useful thing you have is a generic error code and "Unspecified Error".
 
 > [!WARNING]
 > This is mostly WIP, but I fixed the issue by just deleting samba cache (`/var/cache/samba/`, which bricked my server temporarily fsr). I think it was corrupted and I found out when `doas pdbedit -Lv` said something about Mutex size change warning coming from a path under that cache.... (Samba moment)
